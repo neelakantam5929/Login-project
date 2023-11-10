@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="18dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registration Form"
+            android:textSize="32sp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:textStyle="bold"
+             android:fontFamily="sans-serif"
+            android:textColorHint="@color/black"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Full Name :"
+            android:textSize="24sp"
+            android:drawableLeft="@drawable/person"
+            android:drawablePadding="10dp"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:textColorHint="@color/black"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email Id :"
+            android:drawableLeft="@drawable/baseline_email_24"
+            android:drawablePadding="10dp"
+            android:textColorHint="@color/black"
+            android:fontFamily="sans-serif"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone Number :"
+            android:drawableLeft="@drawable/baseline_phone_24"
+            android:textColorHint="@color/black"
+            android:drawablePadding="10dp"
+            android:fontFamily="sans-serif"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password :"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/baseline_password_24"
+            android:textColorHint="@color/black"
+            android:fontFamily="sans-serif"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Register"
+            android:textStyle="italic"
+            android:textSize="22dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/alreadyhaveaccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Already have account ?"
+                android:layout_weight="0.6"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/loginhere"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="Login here"
+                android:textSize="18dp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
